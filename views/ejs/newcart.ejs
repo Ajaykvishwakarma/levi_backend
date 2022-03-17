@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Shopping Cart | Levi's® India</title>
+    <link rel="stylesheet" href="/css/newcart.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footermain.css">
+</head>
+
+<body>
+    <header></header>
+    <div id="cartDiv">
+        <h2>YOUR SHOPPING BAG</h2>
+        <hr><div id="cartHeader">
+            <span>ITEM DESCRIPTION</span>
+            <span>QUANTITY</span>
+            <span>UNIT PRICE</span>
+            <span>TOTAL PRICE</span>
+        </div>
+        <%for(let x of products){%>
+        
+        <hr>
+        <div id="productDescription">
+            <div id="productDetails">
+                <img <%=`src=${x.image}`%> alt="">
+                <div id="details">
+                    <span><%=x.title%></span>
+                    <p><b>Color : </b><%=x.color%></p>
+                    <p><b>Size : </b><%=x.size%></p>
+                    <a href="">EDIT</a>
+                </div>
+            </div>
+            <div id="rem">
+                <div id="pro_qty"><%=x.qty%></div>
+                <br>
+                <a <%=`href=/cart/${x.user_id}?id=${x._id}&remove=true`%>>REMOVE</a>
+            </div>
+            <div id="unitPrice">₹ <%=(+x.price).toFixed(2)%></div>
+            <div id="totalPrice">₹ <%=((+x.price) * (+x.qty)).toFixed(2)%></div>
+        </div>
+        <br>
+        <%}%>
+
+        <hr>
+        <div>
+            <input id="promoCode" type="text" placeholder="Enter Promo Code">
+            <button id="apply">APPLY</button>
+        </div>
+        <div id="cartTotal">
+            <span class="subTotal">SUB TOTAL</span>
+            <hr>
+            <span class="total">
+                ₹ <span id="totalAmt"><%= products.reduce((ac,el)=>ac+((+el.price) * (+el.qty)),0).toFixed(2)%></span>
+            </span> <span class="gst">(INCLUSIVE OF GST)</span>
+        </div>
+        <hr>
+        <div><button id="continueShopping">CONTINUE SHOPPING</button></div>
+        <h3>RECOMMENDED FOR YOU</h3>
+    </div>
+    <footer></footer>
+    <div id="checkout">
+        <button onclick="checkOut()" id="checkoutBtn">CHECKOUT</button>
+    </div>
+</body>
+</html>
+<script type="module">
+   import { navbar, search } from "/js/header.js"
+    import footermain from "/js/footermain.js"
+    import profile from "/components/profile.js"
+    import cart from "/components/cart.js"
+
+    document.getElementsByTagName("footer")[0].innerHTML = footermain()
+    document.getElementsByTagName('header')[0].innerHTML = navbar()
+    document.getElementById('cart_container_anchor').addEventListener('click', cart)
+    profile()
+    search()
+
+    document.getElementById('continueShopping').addEventListener('click',()=>{
+        window.location.href = '/men'
+    })
+
+   const amount = document.getElementById("totalAmt").textContent;
+   localStorage.setItem("amount", amount);
+
+</script>
+<script>
+    function checkOut(){
+        window.location.href = '/shipping'
+    }
+    
+</script>
