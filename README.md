@@ -63,6 +63,7 @@ These are the components outlined in levi's site. All levi's components support 
 | Middle | Slider, Images |
 | Description | Read More |
 
+![alt text](https://raw.githubusercontent.com/Ajaykvishwakarma/levi-s.in/main/landing.png)
 ---
 ### Products page
 
@@ -72,6 +73,7 @@ These are the components outlined in levi's site. All levi's components support 
 | Add to Cart | Add Any Product to Cart |
 | Color | Red, Blue, Green etc. |
 
+![alt text](https://raw.githubusercontent.com/Ajaykvishwakarma/levi-s.in/main/products.png)
 ---
 ### Cart page
 
@@ -80,6 +82,7 @@ These are the components outlined in levi's site. All levi's components support 
 | View Cart | Check Your cart |
 | Checkout From Cart | Buy Selected Items |
 
+![alt text](https://raw.githubusercontent.com/Ajaykvishwakarma/levi-s.in/main/cart.png)
 ---
 
 ### login & Register page
@@ -89,6 +92,7 @@ These are the components outlined in levi's site. All levi's components support 
 | Register | Ask for user details |
 | Login | Use user Details to login thier account  |
 
+![alt text](https://raw.githubusercontent.com/Ajaykvishwakarma/levi-s.in/main/login.png)
 ---
 
 ### Checkout page
@@ -97,6 +101,7 @@ These are the components outlined in levi's site. All levi's components support 
 | ------------- | -------------- |
 | Add Details | Ask for Extra Details to Proceed |
 
+![alt text](https://raw.githubusercontent.com/Ajaykvishwakarma/levi-s.in/main/checkout.png)
 ---
 
 ### Payment page
@@ -105,6 +110,7 @@ These are the components outlined in levi's site. All levi's components support 
 | ------------- | -------------- |
 | Payment Methods | Pay Any type of Cards |
 
+![alt text](https://raw.githubusercontent.com/Ajaykvishwakarma/levi-s.in/main/payment.png)
 ---
 
 ### Store locator page
@@ -112,6 +118,7 @@ These are the components outlined in levi's site. All levi's components support 
 | ------------- | -------------- |
 | Maps | Find all ciies where levi's located |
  
+  ![alt text](https://raw.githubusercontent.com/Ajaykvishwakarma/levi-s.in/main/store.png)
 ---
 
 ### Help page
@@ -119,6 +126,7 @@ These are the components outlined in levi's site. All levi's components support 
 | ------------- | -------------- |
 | Helps | All types of help provided by levi |
 
+![alt text](https://raw.githubusercontent.com/Ajaykvishwakarma/levi-s.in/main/help.png)
 ---
 
 ### Data Code Block
