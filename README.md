@@ -131,7 +131,7 @@ These are the components outlined in levi's site. All levi's components support 
 
 ### Data Code Block
 
-
+```
 {
     "homepageProducts":[
         {
@@ -146,7 +146,7 @@ These are the components outlined in levi's site. All levi's components support 
          }
       ]
 }
-       
+```
 
 # Creators 
 [@vijendra Saini](https://github.com/vijendrasaini)
